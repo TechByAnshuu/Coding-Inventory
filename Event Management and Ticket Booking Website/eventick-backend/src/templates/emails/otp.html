@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification - Eventick</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .otp-box {
+            background: #f3f4f6;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .otp-code {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: 10px;
+            color: #a855f7;
+            margin: 10px 0;
+        }
+
+        .info-text {
+            color: #6b7280;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer {
+            background: #f9fafb;
+            padding: 20px;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎫 Eventick</h1>
+            <p style="margin: 10px 0 0 0; font-size: 16px;">Verify Your Email</p>
+        </div>
+        <div class="content">
+            <p>Hi there,</p>
+            <p>Thank you for signing up with Eventick! To complete your registration, please use the following OTP code:
+            </p>
+
+            <div class="otp-box">
+                <p style="margin: 0; color: #6b7280; font-size: 14px;">Your OTP Code</p>
+                <div class="otp-code">{{otp}}</div>
+                <p class="info-text">This code will expire in 5 minutes</p>
+            </div>
+
+            <p class="info-text">
+                If you didn't request this code, please ignore this email. Your account security is important to us.
+            </p>
+        </div>
+        <div class="footer">
+            <p>© 2025 Eventick. All rights reserved.</p>
+            <p>This is an automated email. Please do not reply.</p>
+        </div>
+    </div>
+</body>
+
+</html>
